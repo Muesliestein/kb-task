@@ -6,7 +6,7 @@ footer {
   padding: 10px;
   background-color: #f1f1f1;
 }
-/* Общая обертка для контента */
+
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
   color: #333;
@@ -23,19 +23,16 @@ body {
   padding: 40px 20px;
 }
 
-/* Заголовки */
 h1, h2, h3, h4 {
   font-weight: 600;
   color: #222;
   margin-top: 0;
 }
 
-/* Параграфы */
 p {
   margin: 1em 0;
 }
 
-/* Ссылки */
 a {
   color: #4caf50;
   text-decoration: none;
@@ -45,7 +42,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Кнопки по умолчанию */
 button {
   background-color: #4caf50;
   color: white;
