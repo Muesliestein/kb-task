@@ -4,8 +4,12 @@
 
     <div class="container centered-content">
       <div class="filters">
-        <label for="userId">Пользователь:</label>
-        <select v-model="filters.userId" @change="resetPage">
+        <label for="userId" class="filters_label">Пользователь:</label>
+        <select
+          v-model="filters.userId"
+          class="filters_select"
+          @change="resetPage"
+        >
           <option value="">Все</option>
           <option v-for="user in users" :key="user.id" :value="user.id">
             {{ user.name }}
@@ -14,6 +18,7 @@
 
         <label for="title">Заголовок:</label>
         <input
+          class="filters_input"
           type="text"
           v-model="filters.title"
           @input="resetPage"
@@ -129,11 +134,11 @@ export default {
 .filters {
   margin-bottom: 20px;
 }
-.filters label {
+.filters_label {
   margin-right: 10px;
 }
-.filters select,
-.filters input {
+.filters_select,
+.filters_input {
   margin-right: 20px;
 }
 .posts {
