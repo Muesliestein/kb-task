@@ -11,7 +11,7 @@ import NewsPage from "./pages/News.vue";
 Vue.use(VueRouter);
 
 export default new VueRouter({
-  mode: "history",
+  mode: "hash",
   routes: [
     {
       path: "/",
